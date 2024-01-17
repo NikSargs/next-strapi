@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "second_types",
+  "info": {
+    "singularName": "second-type",
+    "pluralName": "second-types",
+    "displayName": "Second type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "first_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::first-type.first-type",
+      "inversedBy": "second_types"
+    },
+    "third_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::third-type.third-type",
+      "mappedBy": "second_type"
+    }
+  }
+}

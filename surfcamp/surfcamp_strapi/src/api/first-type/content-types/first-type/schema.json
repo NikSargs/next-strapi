@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "first_types",
+  "info": {
+    "singularName": "first-type",
+    "pluralName": "first-types",
+    "displayName": "first type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "second_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::second-type.second-type",
+      "mappedBy": "first_type"
+    }
+  }
+}

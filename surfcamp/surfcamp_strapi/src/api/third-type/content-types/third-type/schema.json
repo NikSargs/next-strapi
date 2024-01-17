@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "third_types",
+  "info": {
+    "singularName": "third-type",
+    "pluralName": "third-types",
+    "displayName": "third type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "second_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::second-type.second-type",
+      "inversedBy": "third_types"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
