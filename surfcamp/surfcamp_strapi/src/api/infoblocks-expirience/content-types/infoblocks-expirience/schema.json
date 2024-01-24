@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "infoblocks_expiriences",
+  "info": {
+    "singularName": "infoblocks-expirience",
+    "pluralName": "infoblocks-expiriences",
+    "displayName": "Infoblocks Expirience"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "info_blocks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::info-block.info-block"
+    }
+  }
+}

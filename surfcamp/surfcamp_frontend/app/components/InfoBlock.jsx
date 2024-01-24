@@ -1,15 +1,25 @@
-const InfoBlock = ({data}) => {
-    const {headline, text, button, reversed} = data;
-  return (<div>
-    <div className={`info ${reversed ? "info--reversed" : ""}`}>
-        <img className="info__image" src="/info-blocks/rectangle.png" alt="" />
+import ReactMarkdown from "react-markdown";
+
+const InfoBlock = ({ data }) => {
+  const { headline, text, showImageRight, imgSrc, button } = data;
+  console.log(data.button);
+  return (
+    <div>
+      <div className={`info ${showImageRight ? "info--reversed" : ""}`}>
+        <img
+          className="info__image"
+          src={imgSrc || "/info-blocks/rectangle.png"}
+          alt="" />
         <div className="info__text">
-            <h2 className="info__headline">{headline}</h2>
+          <h2 className="info__headline">{headline}</h2>
+          <ReactMarkdown className="copy">
             {text}
-            {button}
+          </ReactMarkdown>
+          {button}
         </div>
+      </div>
     </div>
-  </div>)
+  )
 }
 
 export default InfoBlock
