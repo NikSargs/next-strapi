@@ -8,6 +8,7 @@ export default async function Home() {
   const infoBlockData = processInforBlocks(data);
 
   console.log(infoBlockData)
+
   const heroHeadline = (
     <>
       <h1>barrel.</h1>
@@ -15,7 +16,7 @@ export default async function Home() {
       <h1>happiness</h1>
     </>
   )
-
+  console.log(heroHeadline)
   return (
     <main>
       <HeroSection headline={heroHeadline} />
