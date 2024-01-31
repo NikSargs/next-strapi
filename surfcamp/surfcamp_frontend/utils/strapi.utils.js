@@ -37,3 +37,22 @@ function createInfoBlockButton(buttonData) {
         </Link>
     )
 }
+export async function fetchBlogArticles() {
+    const blogData = await fetchDataFromStrapi("articles?populate=deep");
+    const processBlogArticles = blogData.map(processBlogArticle);
+
+    processBlogArticles.sort(
+        (a, z) => new Date(z.publishedAt) - new Date(a.publishedAt)
+        )
+        
+    
+    return processBlogArticles;
+}
+function processBlogArticle(article) {
+        return {
+        ...article.attributes,
+        id: article.id,
+        featuredImage: 
+            BASE_URL + article.attributes?.featuredImage?.data.attributes?.url
+    }
+}

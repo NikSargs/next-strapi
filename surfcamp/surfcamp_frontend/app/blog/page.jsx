@@ -1,8 +1,12 @@
+import axios from "axios"
 import HighLightArticle from "../components/Blog/HighLightArticle"
 import SubscribeToNewsletter from "../components/Blog/SubscribeToNewsletter"
 import FeaturedItems from "../components/FeaturedArticles/FeaturedItems"
+import { fetchBlogArticles, fetchDataFromStrapi } from "@/utils/strapi.utils"
 
-const Page = ({ }) => {
+export default async function Page({ }) {
+    const data = await fetchBlogArticles();
+    console.log(data);
     const HighLightArticleData = [
         {
             headline: "3 tips for a super fast takeoff",
@@ -60,5 +64,3 @@ const Page = ({ }) => {
         <FeaturedItems items={featuredArticles}/>
     </main>
 }
-
-export default Page
