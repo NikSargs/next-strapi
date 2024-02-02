@@ -43,16 +43,25 @@ export async function fetchBlogArticles() {
 
     processBlogArticles.sort(
         (a, z) => new Date(z.publishedAt) - new Date(a.publishedAt)
-        )
-        
-    
+    )
+
+
     return processBlogArticles;
 }
 function processBlogArticle(article) {
-        return {
+    return {
         ...article.attributes,
         id: article.id,
-        featuredImage: 
+        featuredImage:
             BASE_URL + article.attributes?.featuredimage?.data.attributes?.url
     }
+}
+export function formDate(dateString) {
+    const date = new Date(dateString);
+    const options = {
+        year: "numeric",
+        month: "long",
+        day: "2-digit"
+    }
+    return date.toLocaleDateString("en-US", options);
 }

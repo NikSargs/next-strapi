@@ -1,14 +1,31 @@
+"use client"
+import { useState } from "react"
 import FeaturedArticle from "./FeaturedArticle"
 
-const FeaturedItems = ({headline, items}) => {
+const FeaturedItems = ({ headline, items }) => {
+  const [itemNumber, setItemNumber] = useState(3);
+
+  const onShowMore = () => {
+    if (itemNumber + 3 > items.length) {
+      return setItemNumber(items.length)
+    } else {
+      setItemNumber(itemNumber + 3);
+    }
+
+  }
+
   return (
     <section className="featured-items">
-        <h3 className="featured-items__Headline">{headline || "Our featured articles"}</h3>
-        <div className="featured-items__container">
-            {items.map((item) =>(
-                <FeaturedArticle key={item.slug} article={item}/>
-            ))}
-        </div>
+      <h3 className="featured-items__Headline">{headline || "Our featured articles"}</h3>
+      <div className="featured-items__container">
+        {items
+          .slice(0, itemNumber)
+          .map((item) => (
+            <FeaturedArticle key={item.slug} article={item} />
+          ))}
+      </div>
+      {itemNumber < items.length &&
+        (<button className="btn btn--medium btn--turquoise" onClick={onShowMore}>See more</button>)}
     </section>
   )
 }
