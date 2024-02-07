@@ -3,6 +3,7 @@ import HighLightArticle from "../components/Blog/HighLightArticle"
 import SubscribeToNewsletter from "../components/Blog/SubscribeToNewsletter"
 import FeaturedItems from "../components/FeaturedArticles/FeaturedItems"
 import { fetchBlogArticles, fetchDataFromStrapi } from "@/utils/strapi.utils"
+import ArticleComponent from "../components/Blog/ArticleComponent"
 
 export default async function Page({ }) {
     const data = await fetchBlogArticles();
@@ -17,6 +18,8 @@ export default async function Page({ }) {
     return <main className="blog-page">
         <HighLightArticle data={foundHighlightArticle} />
         <SubscribeToNewsletter />
-        <FeaturedItems items={featuredArticles}/>
+        <FeaturedItems items={featuredArticles} />
     </main>
 }
+
+export const revalidate = 300;

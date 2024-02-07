@@ -696,6 +696,14 @@ export interface ApiArticleArticle extends Schema.CollectionType {
     isHightlight: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<false>;
+    articleContent: Attribute.DynamicZone<
+      [
+        'blog-article.headline',
+        'blog-article.paragraph-with-image',
+        'blog-article.paragraph',
+        'blog-article.landscapeimage'
+      ]
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
