@@ -1,8 +1,15 @@
 {
   "collectionName": "components_blog_article_images",
   "info": {
-    "displayName": "image"
+    "displayName": "image",
+    "description": ""
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "info_blocks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::info-block.info-block"
+    }
+  }
 }

@@ -870,6 +870,7 @@ export interface ApiInfoblocksLandingInfoblocksLanding
       'oneToMany',
       'api::info-block.info-block'
     >;
+    asd: Attribute.Component<'blog-article.image'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

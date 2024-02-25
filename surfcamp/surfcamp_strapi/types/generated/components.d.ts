@@ -15,8 +15,15 @@ export interface BlogArticleImage extends Schema.Component {
   collectionName: 'components_blog_article_images';
   info: {
     displayName: 'image';
+    description: '';
   };
-  attributes: {};
+  attributes: {
+    info_blocks: Attribute.Relation<
+      'blog-article.image',
+      'oneToMany',
+      'api::info-block.info-block'
+    >;
+  };
 }
 
 export interface BlogArticleLandscapeimage extends Schema.Component {

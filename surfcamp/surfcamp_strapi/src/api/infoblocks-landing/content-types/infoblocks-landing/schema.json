@@ -16,6 +16,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::info-block.info-block"
+    },
+    "asd": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blog-article.image"
     }
   }
 }
