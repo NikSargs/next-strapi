@@ -1,0 +1,37 @@
+.navbar-logo {
+    width: 200px;
+    height: 50px;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+.bottom-navbar {
+    height: 40px;
+}
+
+.navbar-nav li {
+    padding: 0 10px;
+}
+
+.navbar-nav li a {
+    color: #ce2a1e !important;
+    font-weight: 500;
+}
+
+.navbar-nav li a:hover {
+    color: #d6675f !important;
+}
+
+.dropdown .dropdown-menu {
+    width: auto;
+}
+
+.card {
+    border-radius: 5em;
+}
+
+.col .asd {
+    background-color: rgb(224, 224, 224);
+}
