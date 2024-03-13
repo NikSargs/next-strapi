@@ -28,10 +28,70 @@
     width: auto;
 }
 
-.card {
-    border-radius: 5em;
+.col-md-6 .card {
+    border-radius: 1.5em;
+}
+
+.col-md-12 .card {
+    border-radius: 1.5em;
+}
+
+.col-md-12 .conventer-card {
+    background-color: rgb(224, 224, 224);
+    border: none;
+}
+
+.col .card {
+    border-radius: 1.5em;
+    border: none;
 }
 
 .col .asd {
     background-color: rgb(224, 224, 224);
+}
+
+.row .col-md-6 .for-you-card {
+    border-radius: 1.5em;
+    background-image: linear-gradient(to right, #ca4b47, #c42924, #af120c);
+    border: none;
+}
+
+.row .col-md-6 .for-you-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.container .nav-tabs {
+    border-bottom: none;
+}
+
+.container .left-tabs .nav-link {
+    background-color: #f0a5a0;
+    color: #fff;
+    border-radius: 2.5rem;
+    border: none;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container .left-tabs .nav-link.active {
+    background-color: #d2322d;
+    color: #fff;
+}
+
+.container .tab-content .tab-pane .col .card .card-body .row .col-md-5 .card .card-body .col-6 .calculate-btn {
+    background-color: #d2322d;
+    border: none;
+}
+
+.container .tab-content .tab-pane .col .card .card-body .row .col-md-5 .card .card-body .col-6 .calculate-btn:hover {
+    background-color: #d74742;
+}
+
+.bank-info {
+    background-color: #f3b1ad;
+    padding-top: 2%;
+    padding-bottom: 1%;
 }
