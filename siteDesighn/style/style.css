@@ -108,7 +108,7 @@ body {
 }
 
 .bank-info {
-    background-color: #f3b1ad;
+    background-color: #fcf0ef;
     padding-top: 2%;
     padding-bottom: 1%;
 }
@@ -118,13 +118,46 @@ body {
     margin-bottom: 50px;
 }
 
+.paragraph-section {
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
 .accordion {
+    border: none !important;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: none !important;
+    border-radius: 1.5rem !important;
+}
+
+.accordion-header .accordion-button {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #af120c !important;
+    color: #fff !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button:hover {
+    background: #fde1e1;
+}
+
+/* .accordion {
     margin: 50px auto;
-    box-shadow: 0 2px 25px rgba(110, 130, 208, .18) !important;
+    border: none;
 }
 
 .accordion-button {
-    background-color: #ca4b47 !important;
+    background-color: #01645d !important;
     color: #fff !important;
     position: relative;
     box-shadow: none !important;
@@ -137,4 +170,50 @@ body {
 
 .accordion-button:hover {
     background: #25aca3 !important;
+}
+
+.accordion-button::after {
+    background-color: #01645d;
+    border-radius: 5px;
+    content: "";
+    transform: scale(1.2);
+    transition: .5s !important;
+} */
+
+.container .paragraph-card {
+    border: none;
+    border-radius: 1.5em;
+}
+
+.info-card .card {
+    border-radius: 1.5em;
+}
+
+.info-card .card .card-body .card-title {
+    color: #af120c;
+}
+
+/* .card-icon {
+    padding-left: 10px;
+    padding-top: 10px;
+} */
+
+.card-icon img {
+    height: 23px;
+    width: 23px;
+}
+
+.partner-icon img {
+    height: 180px;
+    width: 180px;
+}
+
+.card-plus-partner-card {}
+
+.card-plus-partner-card .card:hover {
+    /* transform: scale(1.05); */
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
 }
