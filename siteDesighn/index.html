@@ -137,7 +137,7 @@
     <div class="container">
         <div class="row mb-2 gy-3">
             <div class="col-md-6">
-                <div class="card h-100">
+                <div class="card h-100 px-3 py-3">
                     <div class="card-body">
                         <h3 class="card-title">Курсы валют</h3>
                         <table class="table table-hover">
@@ -180,40 +180,35 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card h-100">
+            <div class="currency-conventer col-md-6 mx-auto">
+                <div class="card h-100 px-3 py-3">
                     <div class="card-body">
                         <h3 class="card-title">Конвентер валют</h3>
-                        <div class="col-md-12 my-auto">
-                            <div class="conventer-card card text-white">
-                                <div class="card-body text-center">
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control"
-                                            aria-label="Text input with dropdown button">
-                                        <button class="btn btn-light dropdown-toggle border" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">KGS</button>
-                                        <ul class="dropdown-menu dropdown-menu-end">
-                                            <li><a class="dropdown-item" href="#">USD</a></li>
-                                            <li><a class="dropdown-item" href="#">KGS</a></li>
-                                            <li><a class="dropdown-item" href="#">RUB</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="mb-3">
-                                        <img src="assets/arrow.png" alt="from-to" style="width: 40px; height: 40px;">
-                                    </div>
-
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control"
-                                            aria-label="Text input with dropdown button">
-                                        <button class="btn btn-light dropdown-toggle border" type="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">USD</button>
-                                        <ul class="dropdown-menu dropdown-menu-end">
-                                            <li><a class="dropdown-item" href="#">USD</a></li>
-                                            <li><a class="dropdown-item" href="#">KGS</a></li>
-                                            <li><a class="dropdown-item" href="#">RUB</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                        <div class="col-lg-7 col-md-12 col-sm-7 col-10 col mx-auto mt-5">
+                            <label for="Chnage">Change</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">KGS</button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">USD</a></li>
+                                    <li><a class="dropdown-item" href="#">KGS</a></li>
+                                    <li><a class="dropdown-item" href="#">RUB</a></li>
+                                </ul>
+                            </div>
+                            <label for="To">To</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">USD</button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">USD</a></li>
+                                    <li><a class="dropdown-item" href="#">KGS</a></li>
+                                    <li><a class="dropdown-item" href="#">RUB</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-center">
+                                1 KGS = 1 USD
                             </div>
                         </div>
                     </div>
@@ -225,32 +220,13 @@
             <div class=" col-md-6">
                 <div class="for-you-card card h-100 text-white">
                     <div class="row g-0">
-                        <div class="col-md-8 col-sm-9">
+                        <div class="col-md-8 col-sm-9 col-9">
                             <div class="card-body">
                                 <h3 class="mb-0">Предложение 1</h3>
                                 <p class="card-subtitle mb-2">Описание</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-3">
-                            <img src="assets/1706856921945.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                    </div>
-                    <!-- <div class="card-body">
-                        <h3 class="mb-0">Предложение 1</h3>
-                        <h6 class="card-subtitle mb-2">Описание</h6>
-                    </div> -->
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="for-you-card card h-100 text-white">
-                    <div class="row g-0">
-                        <div class="col-md-8 col-sm-9 col-xs-9">
-                            <div class="card-body">
-                                <h3 class="mb-0">Предложение 1</h3>
-                                <p class="card-subtitle mb-2">Описание</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-3 col-xs-3">
+                        <div class="col-md-4 col-sm-3 col-3">
                             <img src="assets/1706856921945.png" class="img-fluid rounded-start" alt="...">
                         </div>
                     </div>
@@ -259,13 +235,13 @@
             <div class="col-md-6">
                 <div class="for-you-card card h-100 text-white">
                     <div class="row g-0">
-                        <div class="col-md-8 col-sm-9 ">
+                        <div class="col-md-8 col-sm-9 col-9">
                             <div class="card-body">
                                 <h3 class="mb-0">Предложение 1</h3>
                                 <p class="card-subtitle mb-2">Описание</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-3">
+                        <div class="col-md-4 col-sm-3 col-3">
                             <img src="assets/1706856921945.png" class="img-fluid rounded-start" alt="...">
                         </div>
                     </div>
@@ -274,13 +250,28 @@
             <div class="col-md-6">
                 <div class="for-you-card card h-100 text-white">
                     <div class="row g-0">
-                        <div class="col-md-8 col-sm-10">
+                        <div class="col-md-8 col-sm-9 col-9">
                             <div class="card-body">
                                 <h3 class="mb-0">Предложение 1</h3>
                                 <p class="card-subtitle mb-2">Описание</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-2">
+                        <div class="col-md-4 col-sm-3 col-3">
+                            <img src="assets/1706856921945.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="for-you-card card h-100 text-white">
+                    <div class="row g-0">
+                        <div class="col-md-8 col-sm-9 col-9">
+                            <div class="card-body">
+                                <h3 class="mb-0">Предложение 1</h3>
+                                <p class="card-subtitle mb-2">Описание</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-3 col-3">
                             <img src="assets/1706856921945.png" class="img-fluid rounded-start" alt="...">
                         </div>
                     </div>
@@ -301,13 +292,13 @@
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="col">
-                    <div class="asd card">
+                    <div class="asd card px-3 py-3">
                         <div class="card-body">
                             <h3 class="card-title">
                                 Калькулятор кредитов
                             </h3>
-                            <div class="row gy-3">
-                                <div class="col-md-7">
+                            <div class="row justify-content-center align-items-center gy-3">
+                                <div class="col-md-7 col">
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="mb-0">
@@ -321,6 +312,7 @@
                                                 <label for="disabledSelect" class="form-label">Срок кредита</label>
                                                 <select id="disabledSelect" class="form-select">
                                                     <option>3 месяца</option>
+                                                    <option>5 месяца</option>
                                                 </select>
                                             </div>
                                             <div class="mb-3">
@@ -335,8 +327,10 @@
                                 <div class="col-md-5 text-center">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="card-title">Ежемесячный платеж:</h4>
-                                            <h2>123543 </h2>
+                                            <div class="border-bottom my-3">
+                                                <h4 class="card-title">Ежемесячный платеж:</h4>
+                                                <h2>123543 </h2>
+                                            </div>
                                             <div class="d-grid gap-2 col-6 mx-auto">
                                                 <button class="calculate-btn btn btn-primary"
                                                     type="button">Calculate</button>
@@ -352,12 +346,12 @@
             </div>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                 <div class="col">
-                    <div class="asd card">
+                    <div class="asd card px-3 py-3">
                         <div class="card-body">
                             <h3 class="card-title">
                                 Калькулятор депозита
                             </h3>
-                            <div class="row gy-3">
+                            <div class="row justify-content-center align-items-center gy-3">
                                 <div class="col-md-7">
                                     <div class="card">
                                         <div class="card-body">
@@ -373,7 +367,7 @@
                                                 <div class="input-group mb-3">
                                                     <input type="text" class="form-control"
                                                         aria-label="Text input with dropdown button">
-                                                    <button class="btn btn-light dropdown-toggle border" type="button"
+                                                    <button class="btn dropdown-toggle" type="button"
                                                         data-bs-toggle="dropdown" aria-expanded="false">KGS</button>
                                                     <ul class="dropdown-menu dropdown-menu-end">
                                                         <li><a class="dropdown-item" href="#">USD</a></li>
@@ -395,22 +389,24 @@
                                 <div class="col-md-5 text-center">
                                     <div class="card">
                                         <div class="card-body">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Условия</th>
-                                                        <th scope="col">День</th>
-                                                        <th scope="col">Процентная ставка(%)</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>3 мес</td>
-                                                        <td>60</td>
-                                                        <td>5 %</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Условия</th>
+                                                            <th scope="col">День</th>
+                                                            <th scope="col">Cтавка(%)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>3 мес</td>
+                                                            <td>60</td>
+                                                            <td>5 %</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                             <h4 class="card-title">Общая сумма:</h4>
                                             <h2>123543 </h2>
                                             <div class="d-grid gap-2 col-6 mx-auto">
